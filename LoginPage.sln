@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginPage.Android", "LoginP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginPage.iOS", "LoginPage\LoginPage.iOS\LoginPage.iOS.csproj", "{E7F2A145-A280-4794-8019-36A3698FF3AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginPage", "LoginPage\LoginPage\LoginPage.csproj", "{89F4D984-4897-4429-9576-D8CEEDB82881}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginPage", "LoginPage\LoginPage\LoginPage.csproj", "{89F4D984-4897-4429-9576-D8CEEDB82881}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

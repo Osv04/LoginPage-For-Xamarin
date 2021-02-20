@@ -13,6 +13,11 @@
                 <Entry x:Name="Email" Placeholder="Email"/>
                 <Entry x:Name="Password" Placeholder="Password" IsPassword="True"/>
                 <Button Clicked="BtnLogin" Text="Login" TextColor="White" BackgroundColor="Red"/>
+                <Label x:Name="SignUp" Text="Sign Up" HorizontalOptions="Center" TextDecorations="Underline" FontSize="Medium" TextColor="Red" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

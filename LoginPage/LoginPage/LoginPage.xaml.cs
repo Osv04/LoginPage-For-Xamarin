@@ -23,9 +23,18 @@ namespace LoginPage
         {
             if (string.IsNullOrEmpty(Email.Text) || string.IsNullOrEmpty(Password.Text))
             {
-                await DisplayAlert("Error", "Valores Nulos", "Cancel");
+                await DisplayAlert("Error", "Insertar Valores Aceptables", "Cancel");
+            }
+            if ("a" == Email.Text || "a" == Password.Text) 
+            {
+                await DisplayAlert("Good", "Bienvenido Profe", "Cancel");
             }
             await Navigation.PushAsync(new Page1());
+        }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegistrationPage());
         }
     }
 }
