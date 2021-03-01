@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace LoginPage.Views
+namespace LoginPage
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CoursesPage : ContentPage
+    public partial class Page1 : MasterDetailPage
     {
-        public CoursesPage()
+        public Page1()
         {
             InitializeComponent();
-            
         }
     }
 }

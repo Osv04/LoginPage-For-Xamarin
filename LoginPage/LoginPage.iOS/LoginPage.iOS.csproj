@@ -132,4 +132,7 @@
       <Name>LoginPage</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\inteclg.jpg" />
+  </ItemGroup>
 </Project>

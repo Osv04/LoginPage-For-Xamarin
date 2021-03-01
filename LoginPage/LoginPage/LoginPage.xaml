@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LoginPage.LoginPage">
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <StackLayout VerticalOptions="Center">
+                <Image Source="iconintec.png" x:Name="imgLogo" HeightRequest="150" WidthRequest="150"/>
+                <Entry x:Name="Email" Placeholder="Email"/>
+                <Entry x:Name="Password" Placeholder="Password" IsPassword="True"/>
+                <Button Clicked="BtnLogin" Text="Login" TextColor="White" BackgroundColor="Red"/>
+                <Label x:Name="SignUp" Text="Sign Up" HorizontalOptions="Center" TextDecorations="Underline" FontSize="Medium" TextColor="Red" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
