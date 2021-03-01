@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginPage.Views.DefaultDetail"
+             Title="Detail">
+    <ScrollView BackgroundColor="LightGray">
+        <Grid Margin="20,60,20,20">
+
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="40"/>
+
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="40"/>
+
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <BoxView BackgroundColor="White" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"/>
+            <Image Source="{Binding International.Image}" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Margin="0,15,0,0"/>
+
+            <Label Text="{Binding International.Title}" VerticalOptions="Center" HorizontalOptions="Center"  Grid.Row="1" Grid.Column="0" />
+
+
+            <BoxView BackgroundColor="White" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" />
+            <Image Source="{Binding Study.Image}" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1" Margin="0,15,0,0"/>
+
+            <Label Text="{Binding Study.Title}" VerticalOptions="Center" HorizontalOptions="Center"  Grid.Row="1" Grid.Column="1"/>
+
+
+            <BoxView BackgroundColor="White" Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" />
+            <Image Source="{Binding Sports.Image}" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0" Margin="0,15,0,0"/>
+
+            <Label Text="{Binding Sports.Title}" VerticalOptions="Center" HorizontalOptions="Center"  Grid.Row="3" Grid.Column="0"/>
+
+
+            <BoxView BackgroundColor="White" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" />
+            <Image Source="{Binding Teachers.Image}" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="1" Margin="0,15,0,0"/>
+
+            <Label Text="{Binding Teachers.Title}" VerticalOptions="Center" HorizontalOptions="Center"  Grid.Row="3" Grid.Column="1"/>
+
+
+            <BoxView BackgroundColor="White" Grid.Row="4" Grid.Column="0" Grid.RowSpan="2" />
+            <Image Source="{Binding Subjects.Image}" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="4" Grid.Column="0" Margin="0,15,0,0"/>
+
+            <Label Text="{Binding Subjects.Title}" VerticalOptions="Center" HorizontalOptions="Center"  Grid.Row="5" Grid.Column="0"/>
+
+            <BoxView BackgroundColor="White" Grid.Row="4" Grid.Column="1" Grid.RowSpan="2"/>
+            <Image Source="{Binding AboutUs.Image}" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="4" Grid.Column="1" Margin="0,15,0,0"/>
+
+            <Label Text="{Binding AboutUs.Title}" VerticalOptions="Center" HorizontalOptions="Center"  Grid.Row="5" Grid.Column="1"/>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
